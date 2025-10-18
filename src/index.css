@@ -1,0 +1,16 @@
+/* Import Tailwind base styles and enable utility classes used across the app */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+/* Basic reset for images */
+img { max-width: 100%; display: block; }
+
+/* Default background (Tailwind utilities will override this when applied) */
+body { background: #fff; }

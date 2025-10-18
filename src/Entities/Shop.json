@@ -1,0 +1,92 @@
+{
+  "name": "Shop",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Shop/Salon name"
+    },
+    "owner_email": {
+      "type": "string",
+      "description": "Email of the shop owner"
+    },
+    "description": {
+      "type": "string",
+      "description": "About the shop"
+    },
+    "logo_image": {
+      "type": "string",
+      "description": "Shop logo URL"
+    },
+    "cover_image": {
+      "type": "string",
+      "description": "Shop cover photo URL"
+    },
+    "address": {
+      "type": "string",
+      "description": "Street address"
+    },
+    "city": {
+      "type": "string"
+    },
+    "postal_code": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string",
+      "default": "Germany"
+    },
+    "latitude": {
+      "type": "number",
+      "description": "GPS latitude"
+    },
+    "longitude": {
+      "type": "number",
+      "description": "GPS longitude"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "website": {
+      "type": "string"
+    },
+    "opening_hours": {
+      "type": "object",
+      "description": "Shop opening hours",
+      "properties": {
+        "monday": {
+          "type": "string"
+        },
+        "tuesday": {
+          "type": "string"
+        },
+        "wednesday": {
+          "type": "string"
+        },
+        "thursday": {
+          "type": "string"
+        },
+        "friday": {
+          "type": "string"
+        },
+        "saturday": {
+          "type": "string"
+        },
+        "sunday": {
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "name",
+    "owner_email",
+    "city"
+  ]
+}

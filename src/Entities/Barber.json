@@ -1,0 +1,112 @@
+{
+  "name": "Barber",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "Barber's full name"
+    },
+    "owner_email": {
+      "type": "string",
+      "description": "Email of the barber (can edit their own profile)"
+    },
+    "shop_id": {
+      "type": "string",
+      "description": "ID of the shop this barber works at"
+    },
+    "bio": {
+      "type": "string",
+      "description": "Personal bio about the barber"
+    },
+    "profile_image": {
+      "type": "string",
+      "description": "Profile photo URL"
+    },
+    "portfolio_images": {
+      "type": "array",
+      "description": "Portfolio of work",
+      "items": {
+        "type": "string"
+      }
+    },
+    "hair_type_specialties": {
+      "type": "array",
+      "description": "Hair types they specialize in",
+      "items": {
+        "type": "string",
+        "enum": [
+          "1A",
+          "1B",
+          "1C",
+          "2A",
+          "2B",
+          "2C",
+          "3A",
+          "3B",
+          "3C",
+          "4A",
+          "4B",
+          "4C",
+          "All Types"
+        ]
+      }
+    },
+    "years_experience": {
+      "type": "number",
+      "description": "Years of experience"
+    },
+    "specialties": {
+      "type": "array",
+      "description": "Specific skills (e.g., Fades, Braids, Color)",
+      "items": {
+        "type": "string"
+      }
+    },
+    "services": {
+      "type": "array",
+      "description": "Services offered",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "price": {
+            "type": "number"
+          },
+          "duration_minutes": {
+            "type": "number"
+          }
+        }
+      }
+    },
+    "instagram": {
+      "type": "string"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "rating_average": {
+      "type": "number",
+      "default": 0
+    },
+    "rating_count": {
+      "type": "number",
+      "default": 0
+    },
+    "is_verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_premium": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "name",
+    "owner_email",
+    "shop_id",
+    "hair_type_specialties"
+  ]
+}

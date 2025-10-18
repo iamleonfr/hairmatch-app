@@ -1,0 +1,44 @@
+{
+  "name": "Review",
+  "type": "object",
+  "properties": {
+    "barber_id": {
+      "type": "string",
+      "description": "ID of the barber being reviewed"
+    },
+    "user_email": {
+      "type": "string",
+      "description": "Email of reviewer"
+    },
+    "user_name": {
+      "type": "string",
+      "description": "Name of reviewer"
+    },
+    "rating": {
+      "type": "number",
+      "minimum": 1,
+      "maximum": 5,
+      "description": "Rating from 1-5"
+    },
+    "comment": {
+      "type": "string",
+      "description": "Review text"
+    },
+    "service_used": {
+      "type": "string",
+      "description": "Service received"
+    },
+    "photos": {
+      "type": "array",
+      "description": "Photos of the haircut",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "barber_id",
+    "user_email",
+    "rating"
+  ]
+}
